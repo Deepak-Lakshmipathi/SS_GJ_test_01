@@ -8,6 +8,6 @@ object Read {
 
     val spark_ = SparkSession.builder().appName("Test_app").master("local").getOrCreate()
     val x  = spark_.read.csv("/Users/deepakkumarlakshmipathi/Desktop/craigslist-carstrucks-data/craigslistVehicles.csv")
-    x.show(2)
+    x.show(3)
   }
 }
